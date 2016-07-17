@@ -58,7 +58,7 @@
         <!--Item-->
         <scene sceneID="VWj-fp-fNO">
             <objects>
-                <viewController id="G3X-UI-h5z" sceneMemberID="viewController">
+                <viewController id="G3X-UI-h5z" customClass="ProfileViewController" customModule="LinkedInDemoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ngc-sQ-BXj"/>
                         <viewControllerLayoutGuide type="bottom" id="53S-bQ-mo1"/>

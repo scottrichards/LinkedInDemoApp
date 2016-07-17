@@ -12,6 +12,7 @@
 		3D589AC41D3A887D0007D391 /* linkedin-sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D589AC31D3A887D0007D391 /* linkedin-sdk.framework */; };
 		3D589ACB1D3A8E840007D391 /* LinkedInBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D589ACA1D3A8E840007D391 /* LinkedInBridge.m */; };
 		3D589ACE1D3A8FF90007D391 /* LoginObjCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D589ACD1D3A8FF90007D391 /* LoginObjCViewController.m */; };
+		3D7EDD741D3B3E6E008F3D4E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7EDD731D3B3E6E008F3D4E /* ProfileViewController.swift */; };
 		3D897AF41D39E495009394A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D897AF31D39E495009394A7 /* AppDelegate.swift */; };
 		3D897AF91D39E495009394A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D897AF71D39E495009394A7 /* Main.storyboard */; };
 		3D897AFB1D39E495009394A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D897AFA1D39E495009394A7 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		3D589ACA1D3A8E840007D391 /* LinkedInBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedInBridge.m; sourceTree = "<group>"; };
 		3D589ACC1D3A8FF90007D391 /* LoginObjCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginObjCViewController.h; sourceTree = "<group>"; };
 		3D589ACD1D3A8FF90007D391 /* LoginObjCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginObjCViewController.m; sourceTree = "<group>"; };
+		3D7EDD731D3B3E6E008F3D4E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3D897AF01D39E495009394A7 /* LinkedInDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkedInDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D897AF31D39E495009394A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D897AF81D39E495009394A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				3D589AC11D3A7B310007D391 /* LoginViewController.swift */,
 				3D589ACC1D3A8FF90007D391 /* LoginObjCViewController.h */,
 				3D589ACD1D3A8FF90007D391 /* LoginObjCViewController.m */,
+				3D7EDD731D3B3E6E008F3D4E /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			files = (
 				3D589AC21D3A7B310007D391 /* LoginViewController.swift in Sources */,
 				3D897AF41D39E495009394A7 /* AppDelegate.swift in Sources */,
+				3D7EDD741D3B3E6E008F3D4E /* ProfileViewController.swift in Sources */,
 				3D589ACE1D3A8FF90007D391 /* LoginObjCViewController.m in Sources */,
 				3D589ACB1D3A8E840007D391 /* LinkedInBridge.m in Sources */,
 			);

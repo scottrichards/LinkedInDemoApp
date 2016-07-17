@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface LinkedInBridge : NSObject
-
+- (void) createSessionWithCompletion:(void (^)(NSString *))completionBlock error:(void (^)(NSError *))error;
+- (void) apiRequestWithEndPoint:(NSString *)endPoint onSuccess:(void (^)(NSString *))onSuccess onError:(void (^)(NSString *))onError;
 @end
