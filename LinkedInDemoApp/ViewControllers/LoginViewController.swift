@@ -11,10 +11,11 @@ import UIKit
 
 
 class LoginViewController: UIViewController {
-
+    var linkedInConnect : LinkedInOAuthConnect?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        linkedInConnect = LinkedInOAuthConnect()
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,12 +24,8 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func onSignIn(sender: AnyObject) {
-//        LISDKSessionManager.createSessionWithAuth([LISDK_BASIC_PROFILE_PERMISSION, LISDK_EMAILADDRESS_PERMISSION], state: "some state", showGoToAppStoreDialog: true, successBlock: { (returnState : NSString) -> Void in
-//                print("returnState: \(returnState)")
-//            
-//            }, errorBlock: {
-//            }
-//    )
+        linkedInConnect?.login()
+
     }
 
 }
