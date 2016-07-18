@@ -21,6 +21,7 @@
 		3D897AFB1D39E495009394A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D897AFA1D39E495009394A7 /* Assets.xcassets */; };
 		3D897AFE1D39E495009394A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D897AFC1D39E495009394A7 /* LaunchScreen.storyboard */; };
 		3D897B091D39E495009394A7 /* LinkedInDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D897B081D39E495009394A7 /* LinkedInDemoAppTests.swift */; };
+		3DE2FE901D3CA5D400EAAB9D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE2FE8F1D3CA5D400EAAB9D /* Constants.swift */; };
 		E0854D2BA63654F0A0EACBB1 /* Pods_LinkedInDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814007C299A90C877CB3D72C /* Pods_LinkedInDemoApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		3D897B041D39E495009394A7 /* LinkedInDemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedInDemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D897B081D39E495009394A7 /* LinkedInDemoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedInDemoAppTests.swift; sourceTree = "<group>"; };
 		3D897B0A1D39E495009394A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE2FE8F1D3CA5D400EAAB9D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		814007C299A90C877CB3D72C /* Pods_LinkedInDemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkedInDemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		837BE49E8607B795022E6544 /* Pods-LinkedInDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkedInDemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LinkedInDemoApp/Pods-LinkedInDemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		96F5119E1EB4552C2CC08EDF /* Pods-LinkedInDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkedInDemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LinkedInDemoApp/Pods-LinkedInDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				3D7EDD751D3BE1E9008F3D4E /* Model */,
 				3D589ABB1D3A72AF0007D391 /* Assets */,
 				3D589ABE1D3A7AC40007D391 /* ViewControllers */,
+				3DE2FE8F1D3CA5D400EAAB9D /* Constants.swift */,
 			);
 			path = LinkedInDemoApp;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				3D589ACE1D3A8FF90007D391 /* LoginObjCViewController.m in Sources */,
 				3D589ACB1D3A8E840007D391 /* LinkedInBridge.m in Sources */,
 				3D418F3D1D3C832700C7D798 /* WebViewController.swift in Sources */,
+				3DE2FE901D3CA5D400EAAB9D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

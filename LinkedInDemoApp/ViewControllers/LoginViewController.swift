@@ -16,6 +16,11 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         linkedInConnect = LinkedInOAuthConnect()
+   //     self.performSegueWithIdentifier("segueToTab", sender: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self,
+                                                         selector: #selector(LoginViewController.loginSuccess),
+                                                         name: Constants.Notification.LogIn,
+                                                         object: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,6 +31,14 @@ class LoginViewController: UIViewController {
     @IBAction func onSignIn(sender: AnyObject) {
         linkedInConnect?.login()
 
+    }
+    
+    func loginSuccess() {
+        self.performSegueWithIdentifier("segueToTab", sender: nil)
+    }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        print("segue: \(segue.identifier)")
     }
 
 }

@@ -34,11 +34,6 @@ class WebViewController: OAuthWebViewController, UIWebViewDelegate {
     }
     
     func loadAddressURL() {
-//        if let targetURL = targetURL {
-//            print("targetURL.absoluteString: \(targetURL.absoluteString)")
-//            let req = NSURLRequest(URL: targetURL)
-//            webView.loadRequest(req)
-//        }
         let req = NSURLRequest(URL: targetURL!)
         self.webView.loadRequest(req)
 
@@ -53,8 +48,9 @@ class WebViewController: OAuthWebViewController, UIWebViewDelegate {
                 // Extract the authorization code.
                 let urlParts = url.absoluteString.componentsSeparatedByString("?")
                 let code = urlParts[1].componentsSeparatedByString("=")[1]
-                self.dismissViewControllerAnimated(true, completion: nil)
-               
+                print("bitwyze.linkedindemoapp - urlParts: \(urlParts) code: \(code)")
+               // self.dismissViewControllerAnimated(true, completion: nil)
+                NSNotificationCenter.defaultCenter().postNotificationName(Constants.Notification.LogIn, object: self)
             }
         }
         

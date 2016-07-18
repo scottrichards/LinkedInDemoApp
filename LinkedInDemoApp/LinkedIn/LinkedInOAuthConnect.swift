@@ -21,15 +21,13 @@ class LinkedInOAuthConnect: NSObject {
             accessTokenUrl: "https://accounts.google.com/o/oauth2/token",
             responseType:   "code"
         )
-       //  oauthswift.webViewController = WebViewController()
-         oauthswift.authorize_url_handler = WebViewController()
+        oauthswift.authorize_url_handler = WebViewController()
         // 3 Trigger OAuth2 dance
         oauthswift.authorizeWithCallbackURL(
             NSURL(string: "http://BitWyze.LinkedInDemoApp")!,
             //           NSURL(string: "http://BitWyze.LinkedInDemoApp/auth/linkedin")!,
             scope: "r_basicprofile",        // 4 Scope
             state: "linkedin",
-//            params: ["redirect_uri" : "http://BitWyze.LinkedInDemoApp"],
             success: { credential, response, parameters in
                 print(credential.oauth_token)
                 print(credential.oauth_token_secret)
