@@ -7,15 +7,31 @@
 //
 
 import UIKit
+import SwiftyJSON
+import ObjectMapper
 
 class ProfileViewController: UIViewController {
+    @IBOutlet var profileImageView: UIImageView!
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var locationLabel: UILabel!
+    @IBOutlet var descriptionLabel: UILabel!
     var linkedInBridge : LinkedInBridge?
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         linkedInBridge = LinkedInBridge()
         linkedInBridge?.apiRequestWithEndPoint("https://www.linkedin.com/v1/people/~", onSuccess: { (result: String!) -> Void in
+                if let dataFromString = result.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false) {
+                    // Do it using ObjectMapper,  https://github.com/Hearst-DD/ObjectMapper/
+                    let profile = Mapper<Profile>().map(result)
+                    // approach using SwiftyJSON
+                    let json = JSON(data: dataFromString)
+                    self.updateView(json)
+                    
+                    
+                }
                 print("success: \(result)")
             }, onError: { (error: String!) -> Void in
                 print("ERROR: \(error)")
@@ -28,6 +44,11 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    func updateView(json : JSON) {
+        nameLabel.text = json["firstName"].string
+        titleLabel.text = json["headline"].string
+    }
 
     /*
     // MARK: - Navigation
